@@ -20,7 +20,7 @@ public class GardenController : MonoBehaviour {
         this._currentPosition -= new Vector2(this.speed,0);
         this._transform.position = this._currentPosition;
 
-        if (this._currentPosition.x <=-1400)
+        if (this._currentPosition.x <=-4198)
         {
             this.Reset();
         }
@@ -28,6 +28,6 @@ public class GardenController : MonoBehaviour {
     }
     public void Reset()
     {
-        this._transform.position = new Vector2(-1,0);
+        this._transform.position = new Vector2(-2803,0);
     }
 }
