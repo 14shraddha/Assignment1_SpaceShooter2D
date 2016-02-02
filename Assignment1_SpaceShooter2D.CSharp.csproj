@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_Scripts\BalloonController.cs" />
+    <Compile Include="Assets\_Scripts\BirdController.cs" />
     <Compile Include="Assets\_Scripts\CloudController.cs" />
     <Compile Include="Assets\_Scripts\GardenController.cs" />
   </ItemGroup>

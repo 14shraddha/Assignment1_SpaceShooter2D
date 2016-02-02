@@ -41,13 +41,13 @@ public class BalloonController : MonoBehaviour {
     private void _checkBounds()
     {
         //checked if the plane goes out of boundary and keep it inside
-        if (this._currentPosition.y <-65)
+        if (this._currentPosition.y <-53)
         {
-            this._currentPosition.y = -65;
+            this._currentPosition.y = -53;
         }
-        if (this._currentPosition.y > 175)
+        if (this._currentPosition.y > 161)
         {
-            this._currentPosition.y= 175;
+            this._currentPosition.y= 161;
         }
 
         this._transform.position = this._currentPosition;
