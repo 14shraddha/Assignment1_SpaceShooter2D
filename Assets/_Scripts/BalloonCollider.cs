@@ -32,12 +32,12 @@ public class BalloonCollider : MonoBehaviour {
         if (otherGameObject.gameObject.CompareTag("Coin"))
         {
             this._coinSound.Play();
-            //this.gameController.ScoreValue += 100;
+            this.gameController.ScoreValue += 100;
         }
         if (otherGameObject.gameObject.CompareTag("Bird"))
         {
             this._birdSound.Play();
-            //this.gameController.LivesValue -= 1;
+            this.gameController.LivesValue -= 1;
         }
     }
 }
