@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GardenController : MonoBehaviour {
+public class SkyController : MonoBehaviour {
 
     private Transform _transform;
     private Vector2 _currentPosition;

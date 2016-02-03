@@ -1,16 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CloudController : MonoBehaviour {
+public class CoinController : MonoBehaviour {
 
     private Transform _transform;
     private Vector2 _currentPosition;
     public float speed = 5f;
 
-    public float frontbound = -3859f;
-    public float backbound = -3122f;
-    public float upbound = 163f;
-    public float downbound = 10f;
+    public float frontbound = -3194f;
+    public float backbound = -3806f;
+    public float upbound = 192f;
+    public float downbound = -95f;
 
     // Use this for initialization
     void Start()

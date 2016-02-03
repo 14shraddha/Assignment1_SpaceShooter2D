@@ -5,10 +5,10 @@ public class BirdController : MonoBehaviour {
 
     private Transform _transform;
     private Vector2 _currentPosition;
-    private float frontbound = -3168f;
-    private float backbound = -3841f;
-    private float upbound = 182f;
-    private float downbound = -87f;
+    private float frontbound = -3195f;
+    private float backbound = -3811f;
+    private float upbound = 194f;
+    private float downbound = -84f;
     private float _horizontalSpeed;
     private float _verticalDrift;
 
