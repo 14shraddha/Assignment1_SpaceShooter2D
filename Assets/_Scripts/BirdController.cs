@@ -5,7 +5,7 @@ public class BirdController : MonoBehaviour {
 
     private Transform _transform;
     private Vector2 _currentPosition;
-    private float frontbound = -3195f;
+    private float frontbound = Random.Range(-3195f,-3000f);
     private float backbound = -3811f;
     private float upbound = 194f;
     private float downbound = -84f;
