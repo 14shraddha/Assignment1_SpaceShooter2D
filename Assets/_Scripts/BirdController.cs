@@ -12,10 +12,10 @@ public class BirdController : MonoBehaviour {
     private float _horizontalSpeed;
     private float _verticalDrift;
 
-    public float minHspeed = 5f;
-    public float maxHspeed = 10f;
-    public float minVspeed = -2f;
-    public float maxVspeed = 2f;
+    public float minHspeed = 4f;
+    public float maxHspeed = 7f;
+    public float minVspeed = -1f;
+    public float maxVspeed = 1f;
 
 
 
