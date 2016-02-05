@@ -1,4 +1,14 @@
-﻿using UnityEngine;
+﻿//GameController
+
+/*  Developed by Shraddhaben Patel 300821026
+    Last Modified by Shraddhaben Patel
+    Last Modified Date: Feb 4,2016
+    This file is used for the whole game control.
+    Like it does not belong to one specific asset.
+    It goes to all the asset and do the functionality.*/
+
+
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -51,10 +61,14 @@ public class GameController : MonoBehaviour {
 
 
     //Public instance variables
-    public int birdNumber = 3;
+    public int birdNumber = 3; //to set the numbet of birds in the game
+
+    // to get the instance from the other scripts
     public BirdController bird;
     public BalloonController balloon;
     public CoinController coin;
+
+    //Public Instances
     public Text LivesLable;
     public Text ScoreLable;
     public Text GameOverLable;
@@ -63,7 +77,7 @@ public class GameController : MonoBehaviour {
 
     //Serialized Fields
     [SerializeField]
-    private AudioSource _gameOverSound;
+    private AudioSource _gameOverSound; //oto show thw variable in the insepector even if it is set as private
 
 
     // Use this for initialization
@@ -110,7 +124,7 @@ public class GameController : MonoBehaviour {
 
     public void RestartButtonClick()
     {
-        Application.LoadLevel("Garden");
+        Application.LoadLevel("Garden");// to load the level of the game if resetbutton is pressed
     }
 
 

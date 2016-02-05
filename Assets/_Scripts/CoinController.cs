@@ -1,12 +1,21 @@
-﻿using UnityEngine;
+﻿//CoinController
+/*  Developed by Shraddhaben Patel 300821026
+    Last Modified by Shraddhaben Patel
+    Last Modified Date: Feb 4,2016
+    Coincontroller is the script that is used for the balloon coins in tha game.
+    here the code for the random position of the coin is provided*/
+
+using UnityEngine;
 using System.Collections;
 
 public class CoinController : MonoBehaviour {
 
+    //PRIVATE INSTANCES
     private Transform _transform;
     private Vector2 _currentPosition;
     public float speed = 5f;
 
+    //PUBLIC INSTANCES
     public float frontbound = -3194f;
     public float backbound = -3806f;
     public float upbound = 192f;
@@ -17,9 +26,6 @@ public class CoinController : MonoBehaviour {
     {
         //make refrence to transform componnt in unity
         this._transform = gameObject.GetComponent<Transform>();
-
-        // this._transform.position = new Vector2(0, 480f); // to create the position and always use vector to assign 
-
         this.Reset();
     }
 
@@ -36,6 +42,7 @@ public class CoinController : MonoBehaviour {
         }
     }
 
+    //PUBLIC METHODS
     public void Reset()
     {
         float yPosition = Random.Range(downbound, upbound);
