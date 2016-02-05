@@ -48,7 +48,10 @@ public class BirdController : MonoBehaviour {
         if (this._currentPosition.x <= backbound)
         {
             this.Reset();
+            
         }
+
+        
     }
 
 
@@ -63,5 +66,7 @@ public class BirdController : MonoBehaviour {
         this._transform.position = new Vector2(frontbound, yPosition);// to create the position randomlu
 
     }
+
+    
 }
 
