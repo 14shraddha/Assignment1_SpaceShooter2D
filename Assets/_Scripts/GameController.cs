@@ -59,7 +59,7 @@ public class GameController : MonoBehaviour {
     public Text ScoreLable;
     public Text GameOverLable;
     public Text HighScoreLable;
-    //public Button RestartButton;
+    public Button RestartButton;
 
     //Serialized Fields
     [SerializeField]
@@ -84,7 +84,7 @@ public class GameController : MonoBehaviour {
         this._livesValue = 5;
         this.GameOverLable.enabled = false;
         this.HighScoreLable.enabled = false;
-       // this.RestartButton.enabled = false;
+        this.RestartButton.gameObject.SetActive(false);
 
         for (int birdCount = 0; birdCount < this.birdNumber; birdCount++)
         {
@@ -97,7 +97,7 @@ public class GameController : MonoBehaviour {
        this.HighScoreLable.text = "High Score: " + this._scoreValue;
         this.GameOverLable.enabled = true;
         this.HighScoreLable.enabled = true;
-        //this.RestartButton.enabled = true;
+        this.RestartButton.gameObject.SetActive(true);
 
         this.LivesLable.enabled = false;
         this.ScoreLable.enabled = false;
@@ -106,6 +106,12 @@ public class GameController : MonoBehaviour {
         this._gameOverSound.Play();
     }
 
+    //Public methods
+
+    public void RestartButtonClick()
+    {
+        Application.LoadLevel("Garden");
+    }
 
 
 }
